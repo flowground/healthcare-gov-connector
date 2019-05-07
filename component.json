@@ -1,0 +1,305 @@
+{
+    "title": "Healthcare",
+    "docsUrl": "https://www.healthcare.gov/developers/",
+    "url": "https://api.apis.guru/v2/specs/healthcare.gov/1.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://www.healthcare.gov/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "get_api_articles_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_articles_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_articles_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_api_blog_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_blog_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_blog_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_api_glossary_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_glossary_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_glossary_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_api_questions_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_questions_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_questions_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_api_states_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_states_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_states_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_api_topics_mediaTypeExtension_": {
+            "main": "./lib/actions/get_api_topics_mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_api_topics_mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_blog__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_blog__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_blog__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_es_blog__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_es_blog__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_es_blog__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_es_glossary__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_es_glossary__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_es_glossary__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_es_question__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_es_question__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_es_question__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_es__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_es__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_es__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_es__stateName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_es__stateName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_es__stateName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_glossary__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_glossary__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_glossary__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_question__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get_question__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_question__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get__pageName__mediaTypeExtension_": {
+            "main": "./lib/actions/get__pageName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get__pageName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get__stateName__mediaTypeExtension_": {
+            "main": "./lib/actions/get__stateName__mediaTypeExtension_.js",
+            "title": "Returns pages content.",
+            "description": "Returns pages content.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get__stateName__mediaTypeExtension_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
